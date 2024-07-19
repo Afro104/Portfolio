@@ -1,11 +1,11 @@
 'use client'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFile, height } from "@fortawesome/free-regular-svg-icons/faFile";
+import { faFile } from "@fortawesome/free-regular-svg-icons/faFile";
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
