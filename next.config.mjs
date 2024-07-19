@@ -19,16 +19,16 @@ const nextConfig = {
       },
     });
 
-    // Add Terser plugin configuration if needed
+    // Adjust optimization settings to handle ES modules
     if (config.optimization) {
-      config.optimization.minimizer.push(
+      config.optimization.minimizer = [
         new TerserPlugin({
           terserOptions: {
             ecma: 2020,
             module: true,
           },
-        })
-      );
+        }),
+      ];
     }
 
     return config;
